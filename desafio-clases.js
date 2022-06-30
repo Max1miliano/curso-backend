@@ -1,5 +1,5 @@
 class Usuario {
-    constructor(nombre, apellido, libros, mascotas) {
+    constructor(nombre, apellido) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.libros = [];
@@ -55,6 +55,6 @@ usuario1.addBook('Odisea', 'Homero')
 // Filtra por los nombres de los libros en la biblioteca
 console.log(usuario1.getBookNames())
 
-
+// Me muestra el resultado final de mi nuevo usuario 
 console.log(usuario1)
 
