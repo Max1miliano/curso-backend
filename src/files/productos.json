@@ -1,1 +1,20 @@
-[]
+[
+	{
+		"title": "Celular Samsung",
+		"price": 23000,
+		"thumbnail": "https://www.cetrogar.com.ar/media/catalog/product/t/e/te2696_1.jpg?width=500&height=500&canvas=500,500&quality=80&bg-color=255,255,255&fit=bounds",
+		"id": 1
+	},
+	{
+		"title": "Auriculares SONY",
+		"price": 10000,
+		"thumbnail": "https://www.cetrogar.com.ar/media/catalog/product/t/e/te2696_1.jpg?width=500&height=500&canvas=500,500&quality=80&bg-color=255,255,255&fit=bounds",
+		"id": 2
+	},
+	{
+		"title": "Computadora Portatil",
+		"price": 50000,
+		"thumbnail": "https://www.cetrogar.com.ar/media/catalog/product/t/e/te2696_1.jpg?width=500&height=500&canvas=500,500&quality=80&bg-color=255,255,255&fit=bounds",
+		"id": 3
+	}
+]
