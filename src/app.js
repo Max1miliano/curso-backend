@@ -1,5 +1,12 @@
 import express from 'express';
 import moment from 'moment';
+import Contenedor from './files/contenedor/contenedor.cjs';
+
+const misProductos = new Contenedor()
+
+const productList = await misProductos.getAll()
+
+const productById = await misProductos.getById(1)
 
 const app = express();
 const PORT = 8080;
@@ -8,12 +15,14 @@ const server = app.listen(PORT,()=>{
     console.log(`Listening on PORT ${PORT}`)
 })
 app.get('/',(req,res)=>{
-    res.send("<h1>Bienvenido al servidor Express</h1>")
+    res.send("<h1>Bienvenido al servidor </h1>")
 })
 app.get('/productos',(req,res)=>{
-    res.send("Papa con queso");
+    res.send(productList);
 })
 app.get('/productoRandom',(req,res)=>{
-    counter++;
-    res.send(`El endpoint se ha visitado ${counter} veces`)
+    res.send(productById)
 })
+
+
+// getAll()

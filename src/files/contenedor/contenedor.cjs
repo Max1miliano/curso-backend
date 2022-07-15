@@ -40,12 +40,14 @@ class Contenedor {
             let totalData  = await this.getAll()
             let nuevoTotalData = totalData.map(({id}) => id )
             let resultado = nuevoTotalData.indexOf(idEnviado)
-            if (resultado === -1 ) {
-                console.log('ese id no existe')
+            if (resultado === -1) {
+                // return resultado
+                console.log('no existe')
             } else {
                 let objetoBuscado = totalData.filter(objetoId => objetoId.id === idEnviado)
                 // return objetoBuscado
-                console.log(objetoBuscado)
+                return resultado
+                // console.log(objetoBuscado)
             }
         }catch(error){
            console.log('No se pudo encontrar: ' + error)
