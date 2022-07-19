@@ -46,8 +46,9 @@ class Contenedor {
             } else {
                 let objetoBuscado = totalData.filter(objetoId => objetoId.id === idEnviado)
                 // return objetoBuscado
-                return resultado
+                // return resultado
                 // console.log(objetoBuscado)
+                return objetoBuscado
             }
         }catch(error){
            console.log('No se pudo encontrar: ' + error)
