@@ -1,5 +1,4 @@
 import express from 'express';
-import moment from 'moment';
 import Contenedor from './files/contenedor/contenedor.cjs';
 
 const misProductos = new Contenedor()
@@ -22,15 +21,5 @@ app.get('/productos',(req,res)=>{
     res.send(productList);
 })
 app.get('/productoRandom',(req,res)=>{
-
-    // console.log(req.query)
-
-    // let idDelProducto = req.query.idProductoElegido
-
-    // if (idDelProducto) return res.send('hola')
     res.send(productById)
-
 })
-
-
-// getAll()
